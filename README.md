@@ -1,7 +1,7 @@
 # config file for tmux 
 ## this config file works only for current user
 
-## you can directly copy the config file in `~/` as `~/.tmux.conf` and inside `tmux` shell source the file `tmux source-file ~/.tmux.conf` 
+## you can directly copy the config file to `~/` as `~/.tmux.conf` and inside `tmux` shell source the file `tmux source-file ~/.tmux.conf` 
 
 OR 
 
@@ -47,17 +47,18 @@ Basically all we don't need all four navigation key combo at the same place all 
 
 
 
-### menaing of the keys
+
 
 __________________________________________________________________________________________________________________________________
-#bind -n C-M-z split-window -v                                                                                                    
+### meaning of the keys
+###bind -n C-M-z split-window -v                                                                                                    
                                                                                                                                   
 bind   ->	Tells tmux               : “bind a key to a command.”                                                               
 -n     -> 	Means no prefix          : don’t need Ctrl+B first; just press the key combo directly.                            
 C-M-z	                             : The key combination Ctrl+Alt+Z (C = Ctrl, M = Meta/Alt).                                   
 split-window                         :	The tmux command to split the current pane.                                               
 -v    ->	Vertical split           : creates a new pane below the current one.(Horizontal is -h)                            
-#Effect: Pressing Ctrl+Alt+Z immediately splits the current pane horizontally (new pane appears below) without needing a prefix.  
+###Effect: Pressing Ctrl+Alt+Z immediately splits the current pane horizontally (new pane appears below) without needing a prefix.  
 __________________________________________________________________________________________________________________________________
 
 
