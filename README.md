@@ -3,39 +3,6 @@
 
 ## you can directly copy the config file to `~/` as `~/.tmux.conf` and inside `tmux` shell source the file `tmux source-file ~/.tmux.conf` 
 
-OR 
-
-## make it yourself according to the modification you need  
-`nano ~/.tmux.conf`
-
-```
-
-###split view                
-#Ctrl+Alt+z splits horizontally
-bind -n C-M-z split-window -v  
-###Ctrl+Alt+x splits vertically
-bind -n C-M-x split-window -h   
-                                
-
-##navigation 
-              
-###Ctrl+Alt+o
-#move to down panel
-bind -n C-M-o select-pane -D
-                            
-###Ctrl+Alt+p              
-#move to left panel        
-bind -n C-M-p select-pane -L
-                            
-###Ctrl+Alt+a                        
-#move to up panel                    
-bind -n C-M-a select-pane -U           
-                                        
-###Ctrl+Alt+s                         
-#move to right panel                  
-bind -n C-M-s select-pane -R           
-
-```
 
 ### then open tmux
 `tmux`
